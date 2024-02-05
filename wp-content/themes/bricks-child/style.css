@@ -1,0 +1,150 @@
+/*
+ Theme Name:   Bricks Child Theme
+ Theme URI:    https://bricksbuilder.io/
+ Description:  Use this child theme to extend Bricks.
+ Author:       Bricks
+ Author URI:   https://bricksbuilder.io/
+ Template:     bricks
+ Version:      3.7
+ Text Domain:  bricks
+*/
+
+/* change scroll offset because I have a sticky header now */
+html {scroll-behavior: smooth;scroll-padding-top: 180px;}
+/* adjust scroll offset for mobile header */
+@media( max-width: 767px){
+    html {scroll-padding-top: 120px;}  
+}
+
+.img-home:not(.archive)::before {content: "";background: url(../../uploads/Hubsfera-Home-IMG-2-min.jpg) no-repeat top right;min-height: 100vh;width: 53%;position: absolute;right: 0;top: 50px;background-size: cover;}
+@media(max-width: 767px) {
+  .img-home:not(.archive)::before {min-height: 70vh;width: 100%;right: 0;top: 70px;background-size: contain;background-position-x:right;}
+}
+
+.img-home-2:not(.archive)::before {content: "";background: url(../../uploads/Hubsfera-Home2-Alta-min.jpg) no-repeat top right;min-height: 100vh;width: 53%;position: absolute;right: 0;top: 80px;background-size: cover;}
+@media(max-width: 767px) {
+  .img-home-2:not(.archive)::before {min-height: 70vh;width: 100%;right: 0;top: 100px;background-size: contain;background-position-x:right;}
+}
+
+.img-home-3:not(.archive)::before {content: "";background: url(../../uploads/Hubsfera-Home-IMG-2-min.jpg) no-repeat top right;min-height: 100vh;width: 53%;position: absolute;right: 0;top: 0;background-size: cover;}
+@media(max-width: 767px) {
+  .img-home-3:not(.archive)::before {min-height: 70vh;width: 100%;right: 0;top: 100px;background-size: contain;background-position-x:right;}
+}
+
+#anchor-ico{filter: brightness(0) invert(1);transition: all 0.5s;}
+#anchor-ico:hover {filter:none;}
+g[filter="url(#filter0_f_822_20548)"] {opacity: 0;}
+@keyframes fadeInOut {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+svg:hover g[filter="url(#filter0_f_822_20548)"] {animation: fadeInOut 2s infinite;}
+
+.sticky>section {
+    background-image: linear-gradient(#fff 80%, rgba(0, 0, 0, 0));
+    transition: background-image 1s ease-in-out;
+}
+@media(max-width: 767px) {
+    /*#brx-header.sticky.on-scroll #brxe-qjripo {background: transparent;}*/
+    .sticky.on-scroll.scrolling > section {background-image:linear-gradient(#030303 80%, rgba(0, 0, 0, 0)) !important;}
+
+}
+body::before {content: "";transition: all 0.5s;}
+.show-layer::before {content: "";background: rgb(0 0 0 / 80%);position: fixed;top: 0;width: 100vw;height: 100vh;left: 0;z-index: 999;transition: all 0.5s;}
+
+
+@keyframes moveGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.brxe-button.button-gradient {
+  background: linear-gradient(black, black) padding-box, 
+              linear-gradient(60deg, #0BDA90, #0D20DB, #0BDA90) border-box;
+  border: 2px solid transparent; /* Ajustar según sea necesario */
+}
+.brxe-button.button-gradient.button-gradient-purple {
+  background: linear-gradient(black, black) padding-box, 
+              linear-gradient(60deg, #DA0B62, #0D20DB, #4848C2) border-box;
+  border: 2px solid transparent; /* Ajustar según sea necesario */
+}
+.brxe-button.button-gradient.button-gradient-pink {
+  background: linear-gradient(black, black) padding-box, 
+              linear-gradient(60deg, #DC1B6C, #E99EA1, #CD51B1) border-box;
+  border: 2px solid transparent; /* Ajustar según sea necesario */
+}
+.brxe-button.button-gradient:hover {
+  background-size: 500% 500%;
+  transition: background-position 0s; /* Asegura una transición instantánea al iniciar el hover */
+  animation: moveGradient 5s linear infinite; /* Ajusta la velocidad como desees */
+}
+root {
+  background: linear-gradient(black, black) padding-box, linear-gradient(60deg, #0BDA90, #0D20DB, #0BDA90) border-box;
+}
+root {
+  background: linear-gradient(black, black) padding-box, linear-gradient(60deg, #DA0B62, #0D20DB, #4848C2) border-box;
+}
+root {
+  background: linear-gradient(black, black) padding-box, linear-gradient(60deg, #DC1B6C, #E99EA1, #CD51B1) border-box;
+}
+
+/*HOME*/
+.section-video {min-height: 500px;}
+.section-video.video-fixed > div {position: fixed;top: 400px;}
+.section-video.video-scrolled > div {position: sticky;top: 400px;}
+.section-video .info-dna {transform: translate(50vw, 0px);transition:all 1.5s ease-in-out 0s;}
+.section-video.video-fixed .info-dna {transform: translate(0vw, 0px);}
+.section-video.video-scrolled .info-dna {transform: translate(0vw, 0px);}
+.section-video .hidden-dna {opacity: 0; transition: all 2s;}
+.section-video.video-fixed .hidden-dna {opacity: 1;}
+.section-video.video-scrolled .hidden-dna {opacity: 1;}
+
+/*FOOTER*/
+footer a {transition: all 0.5s;}
+footer a:hover {color: var(--bricks-color-teoirr);}
+
+
+@keyframes arrow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.arrow {
+    animation: arrow 1s infinite;
+}
+
+.btn-ico-white:hover svg {
+  filter: brightness(0) invert(1);
+}
+.btn-ico-black:hover svg {
+  filter: brightness(0);
+}
+
+
+@media (max-width: 1023px){
+  #brxe-strooi .brx-nav-nested-items>li>.brx-submenu-toggle.aria-current>* {color: var(--bricks-color-teoirr) !important;}
+  #brxe-strooi .brx-nav-nested-items>li>[aria-current="page"] {color: var(--bricks-color-teoirr) !important;}
+}
+
+/*BLOG*/
+.brxe-post-content h1, .brxe-post-content h2, .brxe-post-content h3, .brxe-post-content h4, .brxe-post-content h5 {color: black;}
+.brxe-post-content img {margin: 20px 0;}
+.brxe-post-content strong {font-family: "Favorit";}
+
+/*CONTACTO*/
+.message.success {display: none;}
+
+/*VIDEO*/
+.has-bg-video .bricks-background-video-wrapper {top: -50px;}
+
+/*ABOUT*/
+.brxe-block.item-accordion.brx-open .brxe-icon.icon-accordion:before{content: "\e622";}
