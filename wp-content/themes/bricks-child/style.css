@@ -25,10 +25,10 @@ html {
   content: "";
   background: url(/default/head.png) no-repeat top right;
   min-height: 100vh;
-  width: 90%;
+  width: 60%;
   position: absolute;
   right: -300px;
-  top: 50px;
+  top: 200px;
   background-size: contain;
 }
 @media (max-width: 767px) {
