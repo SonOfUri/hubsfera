@@ -25,7 +25,7 @@ html {
   content: "";
   background: url(/default/head.png) no-repeat top right;
   min-height: 100vh;
-  width: 100%;
+  width: 90%;
   position: absolute;
   right: -300px;
   top: 50px;
