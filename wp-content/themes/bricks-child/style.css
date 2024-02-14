@@ -27,7 +27,7 @@ html {
   min-height: 100vh;
   width: 60%;
   position: absolute;
-  right: -300px;
+  right: -150px;
   top: 200px;
   background-size: contain;
 }
