@@ -30,6 +30,7 @@ html {
   right: -150px;
   top: 200px;
   background-size: contain;
+  z-index: 1000;
 }
 @media (max-width: 767px) {
   .img-home:not(.archive)::before {
