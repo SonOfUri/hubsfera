@@ -29,6 +29,8 @@
 
 	<link rel="stylesheet" href="style.css">
 
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
 	<link rel="alternate" type="application/rss+xml" title="Hubsfera &raquo; Feed" href="https://hubsfera.com/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="Hubsfera &raquo; Comments Feed"
@@ -61,9 +63,7 @@
 		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 		rel="stylesheet">
 	<style id='bricks-frontend-inline-css'>
-
-
-		 @font-face {
+		@font-face {
 			font-family: "Favorit";
 			font-weight: 300;
 			font-display: swap;
@@ -320,10 +320,10 @@
 			font-family: "Roboto";
 			font-size: 1.125rem;
 			background-color: #000;
-			
+
 		}
 
-		.u-class-1{
+		.u-class-1 {
 			background-image: url(./default/bg.gif);
 			background-size: cover;
 			background-position: center;
@@ -344,6 +344,14 @@
 		h1 {
 			font-size: 3.75rem;
 			margin-bottom: 10px
+		}
+
+		@media screen and (max-width: 700px) {
+			
+		h1 {
+			font-size: 1.75rem;
+			margin-bottom: 10px
+		}
 		}
 
 		h2 {
@@ -508,8 +516,8 @@
 		.grid-3-cols.brxe-div {
 			display: grid;
 			align-items: initial;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 40px 80px
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 20px 40px
 		}
 
 		/* BREAKPOINT: Tableta vertical */
@@ -1058,7 +1066,7 @@
 		/* BREAKPOINT: Paisaje móvil */
 		@media (max-width: 767px) {
 			#brxe-shscvf {
-				height: 85vh;
+				height: 103vh;
 				justify-content: flex-end;
 				margin-bottom: 0
 			}
@@ -1770,38 +1778,38 @@
 	<a class="skip-link" href="#brx-footer" aria-label="Skip to footer">Skip to footer</a>
 	<header id="brx-header" class="sticky on-scroll">
 		<!-- <section id="brxe-qjripo" class="brxe-section bricks-lazy-hidden "></section> -->
-			<div id="brxe-ikchke" class="brxe-container bricks-lazy-hidden" style="padding: 20px;">
-				<div id="brxe-dzsvpy" class="brxe-block bricks-lazy-hidden"><a id="brxe-gknsgf" class="brxe-image tag"
-						href="#" aria-current="page"><img src="/default/custom.png" class="css-filter size-full" alt=""
-							loading="eager" decoding="async" /> </a></div>
-				<div id="brxe-blxywc" class="brxe-block bricks-lazy-hidden">
-					<nav id="brxe-strooi" data-script-id="strooi" class="brxe-nav-nested bricks-lazy-hidden"
-						aria-label="Menu" data-toggle="mobile_landscape">
-						<ul id="brxe-psnwyu" class="brxe-block brx-nav-nested-items bricks-lazy-hidden">
+		<div id="brxe-ikchke" class="brxe-container bricks-lazy-hidden" style="padding: 20px;">
+			<div id="brxe-dzsvpy" class="brxe-block bricks-lazy-hidden"><a id="brxe-gknsgf" class="brxe-image tag"
+					href="#" aria-current="page"><img src="/default/custom.png" class="css-filter size-full" alt=""
+						loading="eager" decoding="async" /> </a></div>
+			<div id="brxe-blxywc" class="brxe-block bricks-lazy-hidden">
+				<nav id="brxe-strooi" data-script-id="strooi" class="brxe-nav-nested bricks-lazy-hidden"
+					aria-label="Menu" data-toggle="mobile_landscape">
+					<ul id="brxe-psnwyu" class="brxe-block brx-nav-nested-items bricks-lazy-hidden">
 
-							<li class="menu-item"><a id="brxe-kkctil" class="brxe-text-link menu-item" href="">Home</a>
-							</li>
-							<li class="menu-item"><a id="brxe-mytblj" class="brxe-text-link menu-item" href="">About</a>
-							</li>
-							<li class="menu-item"><a id="brxe-yodphe" class="brxe-text-link menu-item"
-									href="">404EncryptBot</a></li>
-							<li class="menu-item"><a id="brxe-lrdppm" class="brxe-text-link menu-item"
-									href="">Tokenomics</a></li>
-							<li class="menu-item">
-								<div id="brxe-eclitg" class="brxe-text menu-item">
-									<p><a href="">Roadmap</a></p>
-								</div>
-							</li>
-						</ul><button id="brxe-shsfxs" data-script-id="shsfxs" class="brxe-toggle" aria-label="Open"
-							aria-expanded="false"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24"
-								height="24" viewBox="0 0 24 24" fill="none">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M9 8C9 7.44772 9.44772 7 10 7H18.0034C18.5556 7 19.0034 7.44772 19.0034 8C19.0034 8.55228 18.5556 9 18.0034 9H10C9.44772 9 9 8.55228 9 8ZM7 16C7 15.4477 7.44772 15 8 15H18.0034C18.5556 15 19.0034 15.4477 19.0034 16C19.0034 16.5523 18.5556 17 18.0034 17H8C7.44772 17 7 16.5523 7 16ZM5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H18.0034C18.5556 13 19.0034 12.5523 19.0034 12C19.0034 11.4477 18.5556 11 18.0034 11H5Z"
-									fill="#030303"></path>
-							</svg></button>
-					</nav>
-				</div>
+						<li class="menu-item"><a id="brxe-kkctil" class="brxe-text-link menu-item" href="">Home</a>
+						</li>
+						<li class="menu-item"><a id="brxe-mytblj" class="brxe-text-link menu-item" href="">About</a>
+						</li>
+						<li class="menu-item"><a id="brxe-yodphe" class="brxe-text-link menu-item"
+								href="">404EncryptBot</a></li>
+						<li class="menu-item"><a id="brxe-lrdppm" class="brxe-text-link menu-item"
+								href="">Tokenomics</a></li>
+						<li class="menu-item">
+							<div id="brxe-eclitg" class="brxe-text menu-item">
+								<p><a href="">Roadmap</a></p>
+							</div>
+						</li>
+					</ul><button id="brxe-shsfxs" data-script-id="shsfxs" class="brxe-toggle" aria-label="Open"
+						aria-expanded="false"><svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+							viewBox="0 0 24 24" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M9 8C9 7.44772 9.44772 7 10 7H18.0034C18.5556 7 19.0034 7.44772 19.0034 8C19.0034 8.55228 18.5556 9 18.0034 9H10C9.44772 9 9 8.55228 9 8ZM7 16C7 15.4477 7.44772 15 8 15H18.0034C18.5556 15 19.0034 15.4477 19.0034 16C19.0034 16.5523 18.5556 17 18.0034 17H8C7.44772 17 7 16.5523 7 16ZM5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H18.0034C18.5556 13 19.0034 12.5523 19.0034 12C19.0034 11.4477 18.5556 11 18.0034 11H5Z"
+								fill="#030303"></path>
+						</svg></button>
+				</nav>
 			</div>
+		</div>
 		</section>
 	</header>
 	<main id="brx-dropdown-content">
@@ -1810,11 +1818,21 @@
 				<div id="brxe-uybtoe" class="brxe-block bricks-lazy-hidden">
 					<div id="brxe-osommo" class="brxe-div bricks-lazy-hidden">
 						<div id="brxe-qlfgwm" class="brxe-div slide-up bricks-lazy-hidden" data-aos="fade-up">
-							<h1 id="brxe-oaesvt" class="brxe-heading font-9 mb-0">Growth your business today for a
-								bigger tomorrow </h1>
-							<div id="brxe-wssrir" class="brxe-text text-lg mb-0">
-								<p>We accelerate companies growth through data and technology</p>
-							</div><a id="brxe-zzebzw" class="brxe-button bricks-button bricks-background-primary"
+							
+							<h1 id="brxe-oaesvt" class="brxe-heading font-9 mb-0 u-class-2">404Encrypt - the number 1
+								way to be on top of 404 </h1>
+
+							<div id="brxe-wssrir" class="brxe-text text-lg mb-0" style="width: 70%;">
+								<p> Discover the power within the ERC404 ecosystem with 404Encrypt. Unleash a suite of
+									tools designed for seamless integration, propelling decentralized innovation to new
+									heights.
+									<br> <br>
+									Navigating the expansive ERC404 ecosystem, even for avid crypto enthusiasts, can be
+									overwhelming. Our commitment is to revolutionize this journey by building a secure
+									and user-friendly platform under the banner of 404Encrypt.
+								</p>
+							</div>
+							<a id="brxe-zzebzw" class="brxe-button bricks-button bricks-background-primary"
 								href="#">Launch Bot</a>
 						</div>
 					</div>
@@ -1870,36 +1888,75 @@
 			<div id="brxe-vvryjk" class="brxe-container bricks-lazy-hidden">
 				<div id="brxe-syypyb" class="brxe-div grid-3-cols w-full bricks-lazy-hidden">
 					<div id="brxe-vxuyxl" class="brxe-block bricks-lazy-hidden" data-aos="fade-up">
-						<h3 id="brxe-lqxsng" class="brxe-heading subtitle">Data</h3>
-						<h2 id="brxe-quaijy" class="brxe-heading font-8">Data<br class="hidden md:block"> Analytics</h2>
-						<h2 id="brxe-xtodwn" class="brxe-heading font-8">Data Analytics</h2>
+						<h3 id="brxe-lqxsng" class="brxe-heading subtitle">Tool</h3>
+						<h2 id="brxe-quaijy" class="brxe-heading font-8">404Encrypt Live Pairs:</h2>
+						<h2 id="brxe-xtodwn" class="brxe-heading font-8">404Encrypt Live Pairs:</h2>
 						<div id="brxe-gjlvez" class="brxe-text text-base font-light mb-5">
-							<p>We transform information into knowledge, with the aim of improving the decision-making
-								process in your company.</p>
-						</div><a id="brxe-csmrrx"
+							<p>Step into the dynamic realm of decentralized finance with 404Encrypt Live Pairs – your
+								real-time gateway to the ever-evolving crypto landscape. Witness the excitement unfold
+								as our cutting-edge Memepool Scanner navigates through live token pairs, providing
+								instant insights into emerging opportunities. Stay ahead of the crypto curve and empower
+								your trading strategies with 404Encrypt Live Pairs – Where Every Moment Counts in the
+								World of Decentralized Possibilities.</p>
+						</div>
+						<!-- <a id="brxe-csmrrx"
 							class="brxe-button btn-gradient mt-auto button-gradient bricks-button bricks-background-primary"
-							href="https://hubsfera.com/data-analytics/">MORE INFO<i class="ti-plus"></i></a>
+							href="https://hubsfera.com/data-analytics/">MORE INFO<i class="ti-plus"></i></a> -->
 					</div>
 					<div id="brxe-ewseyp" class="brxe-block bricks-lazy-hidden" data-aos="fade-up" data-aos-delay="150">
-						<h3 id="brxe-cyvnxq" class="brxe-heading subtitle purple-bar">Tech</h3>
-						<h2 id="brxe-vkxcru" class="brxe-heading font-8">Web / App <br
-								class="hidden md:block">development</h2>
-						<h2 id="brxe-jnjrca" class="brxe-heading font-8">Web / App development</h2>
-						<div id="brxe-eckxza" class="brxe-text text-base font-light mb-5">
-							<p>We provide vanguard digital technology platforms that reinvents your business.</p>
-						</div><a id="brxe-bcwwgx"
+						<h3 id="brxe-cyvnxq" class="brxe-heading subtitle purple-bar">Tool</h3>
+						<h2 id="brxe-vkxcru" class="brxe-heading font-8">
+							<h2 class="hidden md:block">404Encrypt Token Scanner</h2>
+							<h2 id="brxe-jnjrca" class="brxe-heading font-8">404Encrypt Token Scanner</h2>
+							<div id="brxe-eckxza" class="brxe-text text-base font-light mb-5">
+								<p>Introducing 404Encrypt Scanner – Your Gateway to Comprehensive Token Analysis in the
+									ERC404 world. Dive into the world of ERC404 tokens with confidence, as our advanced
+									token scanner meticulously examines and decodes the intricacies of various tokens.
+									Uncover valuable insights, assess risks, and make informed decisions in the
+									ever-evolving blockchain landscape. Empower your crypto journey with 404Encrypt
+									Scanner – Where Precision Meets Possibilities.</p>
+							</div>
+							<!-- <a id="brxe-bcwwgx"
 							class="brxe-button btn-gradient mt-auto button-gradient-purple button-gradient bricks-button bricks-background-primary"
-							href="https://hubsfera.com/web-app-development/">MORE INFO<i class="ti-plus"></i></a>
+							href="https://hubsfera.com/web-app-development/">MORE INFO<i class="ti-plus"></i></a> -->
 					</div>
 					<div id="brxe-znxzao" class="brxe-block bricks-lazy-hidden" data-aos="fade-up" data-aos-delay="300">
-						<h3 id="brxe-epczua" class="brxe-heading subtitle pink-bar">Boost</h3>
-						<h2 id="brxe-xqznfv" class="brxe-heading font-8">Digital <br class="hidden md:block">Boost</h2>
-						<h2 id="brxe-fwuifp" class="brxe-heading font-8">Digital Boost</h2>
+						<h3 id="brxe-epczua" class="brxe-heading subtitle pink-bar">Tool</h3>
+						<h2 id="brxe-xqznfv" class="brxe-heading font-8">404Encrypt Wallet Creation</h2>
+						<h2 id="brxe-fwuifp" class="brxe-heading font-8">404Encrypt Wallet Creation</h2>
 						<div id="brxe-oltbqp" class="brxe-text text-base font-light mb-5">
-							<p>We boost your business through data-driven digital marketing strategies.</p>
-						</div><a id="brxe-fiittu"
+							<p>Enter the world of 404Encrypt Wallet Creation, where convenience meets security on
+								Telegram. Empower your crypto experience with our specialized Wallet Creation Bot,
+								tailored exclusively for Telegram users. Craft personalized and secure digital wallets
+								effortlessly within the familiar confines of your Telegram chat. 404Encrypt Wallet
+								Creation simplifies the process, ensuring a seamless journey into the world of digital
+								assets. Elevate your Telegram experience with 404Encrypt Wallet Creation – Where
+								Security and Simplicity Converge</p>
+						</div>
+						<!-- <a id="brxe-fiittu"
 							class="brxe-button btn-gradient mt-auto button-gradient-pink button-gradient bricks-button bricks-background-primary"
-							href="https://hubsfera.com/digital-boost/">MORE INFO<i class="ti-plus"></i></a>
+							href="https://hubsfera.com/digital-boost/">MORE INFO<i class="ti-plus"></i></a> -->
+
+
+					</div>
+					<div id="brxe-znxzao" class="brxe-block bricks-lazy-hidden" data-aos="fade-up" data-aos-delay="300">
+						<h3 id="brxe-epczua" class="brxe-heading subtitle pink-bar">Tool</h3>
+						<h2 id="brxe-xqznfv" class="brxe-heading font-8">404Encrypt Sniper</h2>
+						<h2 id="brxe-fwuifp" class="brxe-heading font-8">404Encrypt Sniper</h2>
+						<div id="brxe-oltbqp" class="brxe-text text-base font-light mb-5">
+							<p>Embark on a revolutionary journey with 404Encrypt Sniper, the groundbreaking ERC404
+								sniper tool we are crafting for strategic dominance in the crypto landscape. As we
+								meticulously develop this cutting-edge solution, our focus is on precision, enabling
+								users to effortlessly navigate and capitalize on optimal ERC404 token opportunities.
+								404Encrypt Sniper leverages state-of-the-art algorithms, honing in on promising token
+								trades across decentralized exchanges (DEXs). With our dedication to innovation, we are
+								creating a tool that seamlessly executes transactions, ensuring users stay at the
+								forefront of the market. Join us in shaping the future of crypto with 404Encrypt Sniper
+								– Crafting Precision for Profit in the ERC404 Realm.</p>
+						</div>
+						<!-- <a id="brxe-fiittu"
+							class="brxe-button btn-gradient mt-auto button-gradient-pink button-gradient bricks-button bricks-background-primary"
+							href="https://hubsfera.com/digital-boost/">MORE INFO<i class="ti-plus"></i></a> -->
 					</div>
 				</div>
 			</div>
@@ -1907,61 +1964,75 @@
 		<section id="brxe-tgfzot" class="brxe-section section-video bricks-lazy-hidden">
 			<div id="brxe-iugslp" class="brxe-container w-full bricks-lazy-hidden">
 				<div id="brxe-upsudv" class="brxe-div bricks-lazy-hidden">
-					<div id="brxe-joznki" data-script-id="joznki" class="brxe-video"><video
-							data-src="https://hubsfera.com/wp-content/uploads/our-dna.mp4" class="bricks-lazy-hidden"
-							autoplay playsinline onclick="this.paused ? this.play() : this.pause()" loop muted>
+					<div id="brxe-joznki" data-script-id="joznki" class="brxe-video"><video data-src=""
+							class="bricks-lazy-hidden" autoplay playsinline
+							onclick="this.paused ? this.play() : this.pause()" loop muted>
 							<p>Your browser does not support the video tag.</p>
 						</video></div>
 				</div>
 				<div id="brxe-ydnsgt" class="brxe-block info-dna bricks-lazy-hidden">
 					<div id="brxe-xxowji" class="brxe-div bricks-lazy-hidden">
 						<div id="brxe-snwkph" class="brxe-block text-dna bricks-lazy-hidden">
-							<h3 id="brxe-jwihos" class="brxe-heading font-6">Our DNA</h3>
-							<h2 id="brxe-ajjwpq" class="brxe-heading font-8">Passion</h2>
+							<h3 id="brxe-jwihos" class="brxe-heading font-6">Roadmap</h3>
+							<h2 id="brxe-ajjwpq" class="brxe-heading font-8">Phase 1
+							</h2>
 							<div id="brxe-drkdix" class="brxe-text font-light">
-								<p>Breaking boundaries is our goal, exceeding your expectations is our promise. Forging
-									indelible memories is our driving force, inspiring us to love what we do.</p>
+								<p>Stealth Launch: Stealth launch of $CRYPT on Ethereum with 404 Auditor and 404 Live
+									Pairs
+									<br> <br>
+									Exchange Listings: Target major decentralized exchanges (DEXs) to list $CRYPT,
+									enhancing utility and liquidity.
+									<br> <br>
+									Whitepaper Release: Publish advanced Whitepaper & Yellowpaper, detailing
+									utility-focused protocol workflows.
+									<br> <br>
+									404Encrypt Deployment Bot Launch: Launch our deployment bot
+								</p>
 							</div>
 						</div>
 						<div id="brxe-jvjctf" class="brxe-block hidden-dna text-dna bricks-lazy-hidden">
 							<h3 id="brxe-ymvnfy" class="brxe-heading">&nbsp;</h3>
-							<h2 id="brxe-uvyxda" class="brxe-heading font-8">Data driven</h2>
+							<h2 id="brxe-uvyxda" class="brxe-heading font-8">Phase 2</h2>
 							<div id="brxe-akxigk" class="brxe-text font-light">
-								<p>We believe in data, and we use it to help our clients focus on what&#8217;s
-									important, ensuring their digital strategies are not just cutting-edge but also
-									successful.</p>
+								<p>Global Marketing: Explore and execute on global marketing strategies to incoporate a
+									wider community in the $CRYPT ecosystem
+									<br> <br>
+									Revenue Share: With the launch of minimal advertisment share revenue to holders of
+									more than 0.5% $DREAM
+									<br> <br>
+									Incentive Programs: Implement incentive programs that directly contribute to the
+									utility and functionality of the platform.
+									<br> <br>
+									Exploration and Diversification of Utility: Explore opportunities for
+									diversification of 404Encrypt Ecoystem, including cross-chain integrations and
+									innovative utility-driven features
+								</p>
 							</div>
 						</div>
 						<div id="brxe-rtswag" class="brxe-block hidden-dna text-dna bricks-lazy-hidden">
 							<h3 id="brxe-oucnin" class="brxe-heading">&nbsp;</h3>
-							<h2 id="brxe-qoplbc" class="brxe-heading font-8">Flexibility</h2>
+							<h2 id="brxe-qoplbc" class="brxe-heading font-8">Phase 3</h2>
 							<div id="brxe-vlyouv" class="brxe-text font-light">
-								<p>We are a dynamic hub comprised of top-tier professionals, skillfully assembling the
-									optimal team for each project based on its unique requirements.</p>
-							</div>
-						</div>
-						<div id="brxe-jhjubg" class="brxe-block hidden-dna text-dna bricks-lazy-hidden">
-							<h3 id="brxe-ejbqyz" class="brxe-heading">&nbsp;</h3>
-							<h2 id="brxe-tgrhgz" class="brxe-heading font-8">Technology</h2>
-							<div id="brxe-weytrn" class="brxe-text font-light">
-								<p>We explore until we find the best, the fastest and most cutting-edge technical
-									solution for each project.</p>
-							</div>
-						</div>
-						<div id="brxe-nagogd" class="brxe-block hidden-dna text-dna bricks-lazy-hidden">
-							<h3 id="brxe-vspvsi" class="brxe-heading">&nbsp;</h3>
-							<h2 id="brxe-vhzdfg" class="brxe-heading font-8">Honesty</h2>
-							<div id="brxe-mgucfv" class="brxe-text font-light">
-								<p>We foster trust in our client and employee network through unwavering honesty. We
-									firmly believe it&#8217;s the key to long-term professional relationships, and, just
-									between us, we&#8217;re good people 🙂</p>
+								<p>Global Marketing: Explore and execute on global marketing strategies to incoporate a
+									wider community in the $CRYPT ecosystem
+									<br> <br>
+									Revenue Share: With the launch of minimal advertisment share revenue to holders of
+									more than 0.5% $DREAM
+									<br> <br>
+									Incentive Programs: Implement incentive programs that directly contribute to the
+									utility and functionality of the platform.
+									<br> <br>
+									Exploration and Diversification of Utility: Explore opportunities for
+									diversification of 404Encrypt Ecoystem, including cross-chain integrations and
+									innovative utility-driven features
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="brxe-ewbsij" class="brxe-section bricks-lazy-hidden">
+		<!-- <section id="brxe-ewbsij" class="brxe-section bricks-lazy-hidden">
 			<div id="brxe-sbpryj" class="brxe-container w-full bricks-lazy-hidden">
 				<div id="brxe-dvkzqp" class="brxe-div bricks-lazy-hidden">
 					<div id="brxe-yhjczv" data-script-id="yhjczv" class="brxe-video"><video
@@ -2024,10 +2095,10 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section id="brxe-kbdwcy" class="brxe-section bricks-lazy-hidden" data-aos="fade">
 			<div id="brxe-zerbis" class="brxe-container bricks-lazy-hidden">
-				<h3 id="brxe-nsvlsk" class="brxe-heading mb-10">Trends</h3>
+				<h3 id="brxe-nsvlsk" class="brxe-heading mb-10">Tokenomics</h3>
 				<div id="brxe-yvalsh" class="brxe-div bricks-lazy-hidden" data-aos="slide-right"
 					data-aos-duration="1200">
 					<div id="brxe-zqfjxr" data-script-id="zqfjxr" class="brxe-slider-nested bricks-lazy-hidden splide"
@@ -2039,14 +2110,17 @@
 										class="brxe-zjqlwd brxe-image css-filter size-large bricks-lazy-hidden"
 										alt="" />
 									<div class="brxe-wijgdf brxe-div bricks-lazy-hidden">
-										<h1 class="brxe-yrbvyl brxe-post-title mb-0 font-5">The Metaverse: still the
-											future?</h1>
+										<h1 class="brxe-yrbvyl brxe-post-title mb-0 font-5">Ticker: $CRYPT</h1>
 										<div class="brxe-cfltao brxe-post-excerpt">
-											<p>The concept of the metaverse, a virtual universe where people work and
-												have fun, has&hellip;</p>
-										</div><a class="brxe-qbklss brxe-button bricks-button bricks-background-light"
+											<ul>
+												<li>Supply: 100,000,000,000</li>
+												<li>Tax: 3/3</li>
+												<li>LP Lock: 6 Months</li>
+											</ul>
+										</div>
+										<!-- <a class="brxe-qbklss brxe-button bricks-button bricks-background-light"
 											href="https://hubsfera.com/the-metaverse-still-the-future/">READ MORE<i
-												class="ti-plus"></i></a>
+												class="ti-plus"></i></a> -->
 									</div>
 								</div>
 								<div class="brxe-xemevh brxe-div bricks-lazy-hidden"><img width="520" height="316"
@@ -2055,14 +2129,18 @@
 										alt="" />
 
 									<div class="brxe-wijgdf brxe-div bricks-lazy-hidden">
-										<h1 class="brxe-yrbvyl brxe-post-title mb-0 font-5" style="line-height: 1;">Web 3.0 vs Web 4.0: The
-											Evolution of the Internet</h1>
+										<h1 class="brxe-yrbvyl brxe-post-title mb-0 font-5" style="line-height: 1;">Ticker: $CRYPT </h1>
 										<div class="brxe-cfltao brxe-post-excerpt">
-											<p>The internet has come a long way since its inception, constantly evolving
-												and shaping our&hellip;</p>
-										</div><a class="brxe-qbklss brxe-button bricks-button bricks-background-light"
+											
+											<ul>
+												<li>Supply: 100,000,000,000</li>
+												<li>Tax: 3/3</li>
+												<li>LP Lock: 6 Months</li>
+											</ul>
+										</div>
+										<!-- <a class="brxe-qbklss brxe-button bricks-button bricks-background-light"
 											href="https://hubsfera.com/web-3-0-vs-web-4-0-the-evolution-of-the-internet/">READ
-											MORE<i class="ti-plus"></i></a>
+											MORE<i class="ti-plus"></i></a> -->
 									</div>
 								</div>
 							</div>
@@ -2115,9 +2193,18 @@
 					</div>
 					<div id="brxe-nftqjj" class="brxe-div bricks-lazy-hidden">
 						<h3 id="brxe-tambfs" class="brxe-heading mb-5 font-6">Follow us</h3>
-						<div id="brxe-hcfceo" class="brxe-div bricks-lazy-hidden"><a href="" target="_blank"><i
-									id="brxe-dxdorm" class="brxe-icon fab fa-instagram"></i></a><a href=""
-								target="_blank"><i id="brxe-rvpthr" class="brxe-icon fab fa-linkedin-in"></i></a></div>
+						<div id="brxe-hcfceo" class="brxe-div bricks-lazy-hidden">
+							
+							<a href="">
+								<i class='bx bxl-twitter'></i>
+							</a>
+							<a href="">
+								<i class='bx bxl-telegram' ></i>
+							</a>
+							<a href="">
+								<i class='bx bxs-book-add'></i>
+							</a>
+							</div>
 					</div>
 				</div>
 			</section>
